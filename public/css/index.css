@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* styling the body */
+body{
+    background: linear-gradient(hsla(0, 100%, 74%,0.53), hsla(0, 100%, 74%,0.53)),
+    url('../images/bg-intro-desktop.png');
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+ .container{
+    font-family: Poppins;
+    font-size: 16px;
+    align-items: center;
+}
+/* styling the form */
+.try{
+   padding-bottom: 30px; 
+}
+.signUpForm{
+    background-color: white;
+    padding: 30px;
+    border-radius: 5px;
+}
+.form-control{
+    margin-bottom: 20px;
+}
+::placeholder{
+    color: black !important;
+}
+.form-control:focus {
+    color: black;
+    background-color: #fff;
+    border-color: hsl(248, 32%, 49%)!important;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem white!important;
+}
+.help-block{
+    color: hsl(0, 100%, 74%);
+    display: flex;
+    flex-direction: row-reverse;
+    padding-bottom: 5px;
+}
+.btn-primary{
+    background-color: hsl(248, 32%, 49%) !important;
+    text-align: center;
+    width: 100%;
+    border-color: hsl(248, 32%, 49%) !important
+}
+.btn-primary:hover{
+   background-color:hsl(246, 25%, 77%)  !important; 
+}
+.has-error .form-control{
+    border-color: hsl(0, 100%, 74%)!important;
+}
+.has-error .form-control::placeholder{
+    background-image: url("../images/icon-error.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0%;
+    color: transparent!important;
+}
+.btn-success{
+    background-color: hsl(154, 59%, 51%) !important;
+    text-align: center;
+    width: 100%;
+    border-color: hsl(154, 59%, 51%) !important;
+}
+.btn-success:hover{
+   background-color:hsl(246, 25%, 77%)  !important;
+}
+.btn-success.has-error{
+    background-color: red!important;
+}
+
+/* styling the content */
+.content{
+    margin: auto;
+    text-align:left;
+    padding-top: 20%;
+    color: white;
+  }
+  .content h1{
+      font-weight: 700;
+  }
+  .content p{
+      font-weight: 500;
+  }
+  .terms{
+      padding-top: 15px;
+      text-align: center;
+  }
+.by{
+    color: hsl(246, 25%, 77%);
+}
+.term a{
+    text-decoration: none;
+    color: hsl(0, 100%, 74%);
+    font-weight: 600;
+    cursor: pointer;
+}
+.term a:hover{
+    color: hsl(246, 25%, 77%);
+}
+  /* for smaller screens */
+@media (max-width: 375px) {
+    .content{
+    text-align: center;
+    padding-top: 0%;
+}}
+@media (max-width: 768px) {
+    .content{
+        text-align: center;
+        padding-top:0%;
+}}
+@media (min-width: 768px) {
+    .content{
+        text-align: left;
+        padding-top: 50%;
+}}
+@media (min-width: 992px) {
+    .content{
+        text-align: left;
+        padding-top: 20%;
+}}
+@media (min-width: 1280px) {
+    .content{
+        text-align: left;
+        padding-top: 20%;
+    }
+}
