@@ -6,3 +6,5 @@ const Login = ()=>{
 
     return <button onClick={()=>loginWithRedirect()}>Log in</button>
 }
+
+export default Login;
