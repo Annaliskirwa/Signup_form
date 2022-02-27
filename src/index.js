@@ -12,6 +12,8 @@ import {
 
 import Login from "./components/auth0login"
 
+import Logout from "./components/auth0logout"
+
 ReactDOM.render(
   <Auth0Provider
   domain="dev-zuzrkzsf.us.auth0.com"
@@ -21,9 +23,10 @@ ReactDOM.render(
 <BrowserRouter>
     <Routes>
       <Route exact path="/" element = {<App/>}/>
-      <Route path = "/auth" element = {<Login/>}/>
+      <Route path = "/login" element = {<Login/>}/>
+      <Route path = "/logout" element = {<Logout/>}/>
     </Routes>
-  </BrowserRouter>,
+  </BrowserRouter>
 </Auth0Provider>,
 
   document.getElementById('root')
