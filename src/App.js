@@ -1,5 +1,6 @@
 import React,{Component, useState} from "react";
 import {render} from 'react-dom';
+import { Link } from "react-router-dom";
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import FormValidator from "./FormValidator";
 
@@ -91,6 +92,7 @@ class App extends Component {
                   <div><p>See how experienced developers solve problems in real-time. Watching scripted
                     tutorials is great, but understanding how developers think is invaluable.</p>
                   </div>
+                  <div><Link to  = "/login">Click here to log in via auth0</Link></div>
                 </div>
               </div>
               <div className = "col-md -6">
