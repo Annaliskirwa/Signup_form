@@ -14,6 +14,8 @@ import Login from "./components/auth0login"
 
 import Logout from "./components/auth0logout"
 
+import Profile from "./components/auth0profile"
+
 ReactDOM.render(
   <Auth0Provider
   domain="dev-zuzrkzsf.us.auth0.com"
@@ -25,6 +27,7 @@ ReactDOM.render(
       <Route exact path="/" element = {<App/>}/>
       <Route path = "/login" element = {<Login/>}/>
       <Route path = "/logout" element = {<Logout/>}/>
+      <Route path = "/profile" element = {<Profile/>}/>
     </Routes>
   </BrowserRouter>
 </Auth0Provider>,
