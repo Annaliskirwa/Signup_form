@@ -1,6 +1,9 @@
 import React,{Component, useState} from "react";
 import {render} from 'react-dom';
+import { Link } from "react-router-dom";
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import Login from "./components/auth0login";
+import Profile from "./components/auth0profile";
 import FormValidator from "./FormValidator";
 
 class App extends Component {
@@ -91,6 +94,7 @@ class App extends Component {
                   <div><p>See how experienced developers solve problems in real-time. Watching scripted
                     tutorials is great, but understanding how developers think is invaluable.</p>
                   </div>
+                  <Login/>
                 </div>
               </div>
               <div className = "col-md -6">
